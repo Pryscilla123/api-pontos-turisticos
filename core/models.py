@@ -13,7 +13,7 @@ class PontoTuristico(models.Model):
     aprovado = models.BooleanField(default=False)
     atracoes = models.ManyToManyField(Atracao)
     comentarios = models.ManyToManyField(Comentario)
-    enderecos = models.ForeignKey(Endereco, models.CASCADE)
+    enderecos = models.ForeignKey(Endereco, models.CASCADE, null=True, blank=True)
 
     def __str__(self):
         return self.nome
