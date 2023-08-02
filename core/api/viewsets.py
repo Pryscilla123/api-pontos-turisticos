@@ -19,10 +19,10 @@ class PontoTuristicoViewSet(ModelViewSet):
             queryset = PontoTuristico.objects.filter(id=id)
 
         if nome:
-            queryset.filter(nome=nome)
+            queryset = queryset.filter(nome=nome)
 
         if descricao:
-            queryset.filter(descricao=descricao)
+            queryset = queryset.filter(descricao=descricao)
 
         return queryset
 
