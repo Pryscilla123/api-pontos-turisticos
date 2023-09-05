@@ -11,7 +11,7 @@ class PontoTuristicoSerializer(ModelSerializer):
 
     class Meta:
         model = PontoTuristico
-        fields = ('id', 'nome', 'descricao', 'aprovado', 'foto', 'atracoes', 'comentarios', 'avaliacoes', 'endereco')
+        fields = ('id', 'nome', 'descricao', 'descricao_completa', 'aprovado', 'foto', 'atracoes', 'comentarios', 'enderecos')
 
     def get_descricao_completa(self, obj):
         return '%s - %s' % (obj.nome, obj.descricao)

@@ -12,7 +12,6 @@ class PontoTuristicoViewSet(ModelViewSet):
     serializer_class = PontoTuristicoSerializer
     filter_backends = (SearchFilter,)
     permission_classes = [IsAuthenticated,]
-    authentication_classes = [TokenAuthentication,]
     search_fields = ('nome', 'descricao', 'enderecos__linha1')
     lookup_field = 'nome'
 
