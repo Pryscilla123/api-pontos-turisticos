@@ -145,9 +145,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = 'static-root'
-
-
 # MEDIA_ROOT = 'imagens'
 #
 # MEDIA_URL = '/media/'
